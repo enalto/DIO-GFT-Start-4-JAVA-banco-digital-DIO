@@ -6,4 +6,12 @@ public class Cliente {
         this.nome=nome;
         this.email=email;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }

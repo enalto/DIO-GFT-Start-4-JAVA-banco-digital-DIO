@@ -45,7 +45,7 @@ public abstract class Conta implements IConta{
 
     @Override
     public void extrato(){
-        System.out.println("Extrato conta= "+this.numero);
+        System.out.println("\nExtrato conta= "+this.numero +" "+this.cliente.getNome());
         for (Lancamento lancamento: lancamentos) {
             System.out.println(lancamento.getData()+" "+lancamento.getOperacaoConta()+" "+lancamento.getValor());
         }
